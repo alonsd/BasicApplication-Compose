@@ -1,2 +1,0 @@
-# BasicApplication Compose
- 
