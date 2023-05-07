@@ -122,9 +122,4 @@ dependencies {
     //Compose Destinations
     implementation("io.github.raamcosta.compose-destinations:animations-core:1.8.33-beta")
     ksp("io.github.raamcosta.compose-destinations:ksp:1.8.33-beta")
-
-}
-
-kapt {
-    generateStubs = true
 }
