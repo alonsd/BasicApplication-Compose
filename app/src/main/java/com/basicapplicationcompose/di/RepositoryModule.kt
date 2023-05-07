@@ -14,7 +14,7 @@ abstract class RepositoryModule {
 
     @Binds
     @Singleton
-    abstract fun bindDashboardRepository(
-        problemsRepositoryImpl: RepositoryImpl
+    abstract fun bindRepository(
+        repositoryImpl: RepositoryImpl
     ): Repository
 }
