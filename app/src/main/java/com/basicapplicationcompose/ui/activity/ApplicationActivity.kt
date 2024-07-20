@@ -1,6 +1,7 @@
 package com.basicapplicationcompose.ui.activity
 
 import android.os.Bundle
+import androidx.activity.ComponentActivity
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.ui.ExperimentalComposeUiApi
@@ -15,7 +16,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @ExperimentalAnimationApi
 @ExperimentalComposeUiApi
 @AndroidEntryPoint
-class ApplicationActivity : AppCompatActivity() {
+class ApplicationActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setAqvContent {

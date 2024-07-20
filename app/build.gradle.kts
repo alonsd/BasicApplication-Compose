@@ -11,7 +11,7 @@ plugins {
 
 
 android {
-    compileSdk = 33
+    compileSdk = 34
     buildFeatures {
         viewBinding = true
         dataBinding = true
@@ -27,14 +27,14 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.0"
+        kotlinCompilerExtensionVersion = "1.5.8"
     }
 
 
     defaultConfig {
         applicationId = "com.basicapplicationcompose"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -84,14 +84,14 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
 
     //Compose
-    implementation("androidx.activity:activity-compose:1.7.1")
-    implementation("androidx.compose.ui:ui-tooling:1.5.0-alpha03")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.1")
+    implementation("androidx.activity:activity-compose:1.8.2")
+    implementation("androidx.compose.ui:ui-tooling:1.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
 
     //Kotlin
-    implementation("androidx.core:core-ktx:1.10.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+    implementation("androidx.core:core-ktx:1.12.0")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
 
     //Ok Http Logging
     implementation("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.7")
@@ -100,26 +100,26 @@ dependencies {
     implementation("com.github.haroldadmin:NetworkResponseAdapter:4.2.1")
 
     // Navigation
-    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
-    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
 
     //Material
-    implementation("androidx.compose.material3:material3:1.0.1")
+    implementation("androidx.compose.material3:material3:1.2.0")
 
     //Coroutines
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
 
     //Gson
     implementation("com.google.code.gson:gson:2.10.1")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     //Dagger - Hilt
-    implementation("com.google.dagger:hilt-android:2.44.2")
-    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
-    kapt("com.google.dagger:hilt-compiler:2.44.2")
+    implementation("com.google.dagger:hilt-android:2.49")
+    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+    kapt("com.google.dagger:hilt-compiler:2.50")
 
     //Compose Destinations
-    implementation("io.github.raamcosta.compose-destinations:animations-core:1.8.33-beta")
-    ksp("io.github.raamcosta.compose-destinations:ksp:1.8.33-beta")
+    implementation("io.github.raamcosta.compose-destinations:animations-core:1.10.0")
+    ksp("io.github.raamcosta.compose-destinations:ksp:1.10.0")
 }
